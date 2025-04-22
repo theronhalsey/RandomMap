@@ -8,12 +8,12 @@ Before you can use the functions packaged by the compiler, you need to do the fo
 
 1.1 Prerequisites to Deployment
 Before you can deploy mapGenerator.ctf, you need a server instance to host it. The server 
-instance must be configured to have access to MATLAB Runtime(R2024a).
+instance must be configured to have access to MATLAB Runtime(R2024b).
 * If you do not have a server instance created, see: 
   https://www.mathworks.com/help/mps/server/creating-a-server.html
-* If you do not have MATLAB Runtime(R2024a) installed, download the installer from the 
+* If you do not have MATLAB Runtime(R2024b) installed, download the installer from the 
   MATLAB Runtime page at: https://www.mathworks.com/products/compiler/mcr/index.html
-* If you need to configure the server instance to use MATLAB Runtime(R2024a), see: 
+* If you need to configure the server instance to use MATLAB Runtime(R2024b), see: 
   https://www.mathworks.com/help/mps/server/customize-the-configuration-file.html
 
 1.2 mapGenerator.ctf Deployment
@@ -57,10 +57,10 @@ The Python client package includes the following:
 * production_server - API for evaluating functions on a remote MATLAB Production Server 
   instance
 
-The Python client installer is located at `MPS_INSTALL/client/python/setup.py`. To 
-install the client, go to the python folder and execute:
+The Python client installer is located in `MPS_INSTALL/client/python`. To install the 
+client, go to that folder and execute:
  
-python setup.py install 
+python -m pip install .
 
 For information about developing Python clients, see: 
 * https://www.mathworks.com/help/mps/python-client-programming.html
